@@ -1,8 +1,8 @@
 # Setup
-title:               Rahul Yumlembam
-tagline:             'Machine Story'
+title:               Henry Kabuye
+tagline:             'Decide later'
 description:         'A no-nonsense blog theme—like a well-tuned ML model, minimal overfitting, maximum readability.'
-url:                 'https://yumlembam.github.io'
+url:                 'https://Henrinnes.github.io'
 baseurl:             ''
 paginate:            5
 permalink:           pretty
@@ -10,7 +10,7 @@ permalink:           pretty
 # About/contact
 author:
   name:              Rahul Yumlembam
-  url:               'https://yumlembam.github.io'
+  url:               'https://Henrinnes.github.io'
   email:             rahul@example.com  # Update with your real email if needed
 
 # Plugins
@@ -19,4 +19,4 @@ plugins:
 
 # Custom vars
 version:             1.1.0
-google_analytics_id: G-9E77406NL6
+google_analytics_id: 
