@@ -1,0 +1,22 @@
+# Setup
+title:               Henry Kabuye
+tagline:             'Decide later'
+description:         'A no-nonsense blog theme—like a well-tuned ML model, minimal overfitting, maximum readability.'
+url:                'http://Henrinnes.github.io'
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Henry Kabuye
+  url:              'http://Henrinnes.github.io'
+  email:             henrinnes@yahoo.co.uk  # Update with your real email if needed
+
+# Plugins
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: G-VX45NWBDGW
