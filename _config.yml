@@ -2,7 +2,7 @@
 title:               Henry Kabuye
 tagline:             'Decide later'
 description:         'A no-nonsense blog theme—like a well-tuned ML model, minimal overfitting, maximum readability.'
-url:                'http://Henrinnes.github.io'
+url:                'https://Henrinnes.github.io'
 baseurl:             ''
 paginate:            5
 permalink:           pretty
@@ -10,7 +10,7 @@ permalink:           pretty
 # About/contact
 author:
   name:              Henry Kabuye
-  url:              'http://Henrinnes.github.io'
+  url:              'https://Henrinnes.github.io'
   email:             henrinnes@yahoo.co.uk  # Update with your real email if needed
 
 # Plugins
