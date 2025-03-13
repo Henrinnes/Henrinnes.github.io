@@ -69,6 +69,9 @@ title: Ransomware Detection Story
         <h2>Subscribe</h2>
         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
         <div class="mc-field-group">
+          <label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
+          <input type="text" name="LNAME" class="required name" id="mce-FNAME" required value="">
+          <label for="mce-LNAME">Email Address <span class="asterisk">*</span></label> <input type="text" name="LNAME" class="required email" id="mce-LNAME" required value="">
           <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
           <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required value="">
         </div>
@@ -96,6 +99,10 @@ title: Ransomware Detection Story
       window.ftypes = new Array();
       fnames[0] = 'EMAIL';
       ftypes[0] = 'email';
+      fnames[1] = 'FNAME';
+      ftypes[1] = 'text';
+      fnames[2] = 'LNAME';
+      ftypes[2] = 'text'
     }(jQuery));
     var $mcj = jQuery.noConflict(true);
   </script>
