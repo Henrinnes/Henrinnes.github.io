@@ -1,12 +1,12 @@
 ---
 layout: post
-title: What's Jekyll?
+title: What's RanCTGAN?
 ---
 
-[Jekyll](https://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
+[Jekyll](https://jekyllrb.com) is a ransomware detection framework, an open-source tool for creating simple yet powerful ransomware detection systems of evolving ransomware variants. From [the project's readme](https://github.com/Henrinnes/RanCTGAN/README.md):
 
-  > Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.
+  > RanCTGAN is a framework for ransomware detection that addresses data imbalance, lack of explainability and predictive uncertainty through an integrated approach. The framework combines data augmentation techniques (SMOTE and a Conditional TabGAN (CTGAN)), uncertainty quantification using Bayesian Neural Networks (BNNs) with Monte Carlo dropout, and explainability via SHAP (SHapley Additive exPlanations) and LIME (Local Interpretable Model-Agnostic Explanations).
 
-It's an immensely useful tool and one we encourage you to use here with Lanyon.
+It's an immensely useful tool and one we encourage you to use here.
 
-Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).
+Find out more by [visiting the project on GitHub](https://github.com/Henrinnes/RanCTGAN).
