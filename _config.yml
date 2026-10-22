@@ -16,6 +16,7 @@ author:
 # Files not published as pages
 exclude:
   - README.md
+  - DESIGN.md
 
 # Plugins
 plugins:

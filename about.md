@@ -14,10 +14,10 @@ From 2008 to 2017 I was Director of Technical Services at Computer Bytes Uganda.
 
 ## Publications
 
-<ol class="pub-list compact">
+<ol class="pub-list">
 {% for pub in site.data.publications %}
-  <li class="card">
-    <span class="pub-year mono">{{ pub.year }}</span>
+  <li>
+    <span class="pub-year">{{ pub.year }}</span>
     <div>
       <h3>{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
       <p>{{ pub.venue }}</p>
