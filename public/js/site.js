@@ -17,14 +17,22 @@
   var menuToggle = document.querySelector('.menu-toggle');
   var nav = document.querySelector('#site-nav');
   if (menuToggle && nav) {
+    var closeMenu = function () {
+      nav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    };
     menuToggle.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
       menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
     nav.addEventListener('click', function (e) {
-      if (e.target.closest('a')) {
-        nav.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
+      if (e.target.closest('a')) closeMenu();
+    });
+    // Escape closes the menu and puts focus back on the button
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav.classList.contains('open')) {
+        closeMenu();
+        menuToggle.focus();
       }
     });
   }
