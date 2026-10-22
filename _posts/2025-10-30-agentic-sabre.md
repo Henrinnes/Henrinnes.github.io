@@ -1,5 +1,10 @@
 ---
 layout: post
+description: "An uncertainty-aware multi-agent framework that decides when to auto-contain, escalate or allow, published in Expert Systems with Applications."
+tags:
+  - "Ransomware"
+  - "Multi-agent"
+  - "Uncertainty"
 title: "Agentic SABRE: Uncertainty-Aware Multi-Agent Ransomware Detection"
 ---
 

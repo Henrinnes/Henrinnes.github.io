@@ -1,5 +1,10 @@
 ---
 layout: post
+description: "A ransomware detection framework tackling data imbalance, explainability and predictive uncertainty with CTGAN augmentation, Bayesian neural networks, SHAP and LIME."
+tags:
+  - "Ransomware"
+  - "GANs"
+  - "Explainability"
 title: What's RanCTGAN?
 ---
 

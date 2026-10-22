@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+lede: PhD researcher in machine learning for ransomware detection.
 ---
 
 Hi, I'm Henry Kabuye. I'm a PhD researcher in Computer and Information Sciences at Northumbria University, in the Faculty of Engineering and Environment. My research is on machine learning for ransomware detection, especially uncertainty-aware, multi-agent detectors such as [Agentic SABRE]({% post_url 2025-10-30-agentic-sabre %}), and datasets such as [RansKnow]({% post_url 2026-07-14-ransknow %}). I also work on privacy-preserving federated learning for UAV networks as part of the EU [COVER project]({% post_url 2026-05-13-cover-fl-dp-uav %}).
@@ -13,10 +14,17 @@ From 2008 to 2017 I was Director of Technical Services at Computer Bytes Uganda.
 
 ## Publications
 
-* **Agentic SABRE: An Uncertainty-Aware Neuro-Symbolic Multi-Agent Framework for Adaptive Ransomware Detection.** *Expert Systems with Applications*, 2026. [doi:10.1016/j.eswa.2026.133558](https://doi.org/10.1016/j.eswa.2026.133558)
-* **Explainable and Uncertainty Aware AI-based Ransomware Detection.** *IEEE Access*, 2025. [doi:10.1109/ACCESS.2025.3581424](https://doi.org/10.1109/ACCESS.2025.3581424)
-* **Power, institutional protectionism and the disinclination of minoritised employees to raise complaints in UK universities.** *Culture and Organization*, 2026. [doi:10.1080/14759551.2026.2623996](https://doi.org/10.1080/14759551.2026.2623996)
-* **Efficient Operation of Future Wireless Mesh Networks over Available Unlicensed and Licensed GSM, WiMAX and Wi-Fi Spectra in Uganda.** *Academia Letters*, 2011.
+<ol class="pub-list compact">
+{% for pub in site.data.publications %}
+  <li class="card">
+    <span class="pub-year mono">{{ pub.year }}</span>
+    <div>
+      <h3>{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
+      <p>{{ pub.venue }}</p>
+    </div>
+  </li>
+{% endfor %}
+</ol>
 
 ## Find me
 

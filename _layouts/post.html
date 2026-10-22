@@ -2,26 +2,40 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+{% assign words = content | number_of_words %}
+<article class="container narrow post">
+  <a class="back-link" href="{{ '/posts/' | relative_url }}"><span aria-hidden="true">&larr;</span> All posts</a>
 
-{% if site.related_posts.size >= 1 %}
-<div class="related">
-  <h2>Related posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
+  <header class="page-header">
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      <span>&middot;</span>
+      <span>{{ words | divided_by: 200 | plus: 1 }} min read</span>
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.tags.size > 0 %}
+    <ul class="tags">
+      {% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <nav class="post-nav" aria-label="More posts">
+    {% if page.previous %}
+    <a class="card" href="{{ page.previous.url | relative_url }}">
+      <span class="post-nav-label">&larr; Older</span>
+      <span>{{ page.previous.title }}</span>
+    </a>
+    {% else %}<span></span>{% endif %}
+    {% if page.next %}
+    <a class="card post-nav-next" href="{{ page.next.url | relative_url }}">
+      <span class="post-nav-label">Newer &rarr;</span>
+      <span>{{ page.next.title }}</span>
+    </a>
+    {% endif %}
+  </nav>
+</article>

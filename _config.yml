@@ -13,6 +13,10 @@ author:
   url:              'https://Henrinnes.github.io'
   email:             henrinnes@yahoo.co.uk  # Update with your real email if needed
 
+# Files not published as pages
+exclude:
+  - README.md
+
 # Plugins
 plugins:
   - jekyll-paginate

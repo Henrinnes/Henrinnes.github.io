@@ -1,5 +1,10 @@
 ---
 layout: post
+description: "Secure, privacy-preserving and incentive-based data sharing for UAV fleets in the EU COVER project, and two privacy-accounting bugs worth knowing about."
+tags:
+  - "Federated learning"
+  - "Differential privacy"
+  - "UAVs"
 title: "Private, Secure Data Sharing in UAV Networks"
 ---
 
