@@ -1,8 +1,8 @@
 # Setup
 title:               Henry Kabuye
-tagline:             'Decide later'
-description:         'Henry Kabuye writes about machine learning, deep learning and research papers.'
-url:                'https://henrinnes.github.io'
+tagline:             'Ransomware Detection Mechanisms'
+description:         'Henry Kabuye writes about ransomware detection, machine learning and research.'
+url:                'https://Henrinnes.github.io'
 baseurl:             ''
 paginate:            5
 permalink:           pretty
@@ -10,8 +10,8 @@ permalink:           pretty
 # About/contact
 author:
   name:              Henry Kabuye
-  url:              'https://henrinnes.github.io'
-  # email:           you@example.com  # add your own email if you want it shown
+  url:              'https://Henrinnes.github.io'
+  email:             henrinnes@yahoo.co.uk  # Update with your real email if needed
 
 # Plugins
 plugins:
