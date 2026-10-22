@@ -9,7 +9,7 @@ Hi, I'm Henry Kabuye. I'm a PhD researcher in Computer and Information Sciences 
 
 Before my PhD I studied at Teesside University, earning a BSc (Hons) in Cyber Security & Networks and then an MSc in Cybersecurity. Earlier, I studied software engineering and information systems management at Aptech Worldwide.
 
-From 2008 to 2017 I was Director of Technical Services at [Computer Bytes Uganda](https://www.computerbytesug.co.uk). Since moving to the UK I have worked as an IT technician and as a contact centre adviser at Citizens Advice.
+From 2008 to 2017 I was Director of Technical Services at Computer Bytes Uganda. Since moving to the UK I have worked as an IT technician and as a contact centre adviser at Citizens Advice.
 
 ## Publications
 
