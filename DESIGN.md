@@ -18,3 +18,5 @@ Dial: ENERGY 1 / RHYTHM 2 / MOTION 1
 - **Shape:** 10px radius on panels, 6px on buttons and fields, 4px on tags. No pill shapes.
 - **Motion:** hover colour changes only. No lifts, fades or loops.
 - **Dark mode:** a working toggle that follows the system setting by default.
+- **Logo:** the Computer Bytes Uganda mark, confirmed by Henry (22 October 2026). It is used for the header, the browser icon and the iOS home-screen icon, which puts it on a white square because iOS fills transparent areas with black.
+- **Tags:** neutral grey labels, not teal, because they are not links.

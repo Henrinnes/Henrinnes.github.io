@@ -4,11 +4,16 @@
   // Dark mode toggle: remembers the choice, otherwise follows the system setting
   var themeToggle = document.querySelector('.theme-toggle');
   if (themeToggle) {
-    themeToggle.addEventListener('click', function () {
-      var current = root.getAttribute('data-theme') ||
+    var currentTheme = function () {
+      return root.getAttribute('data-theme') ||
         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      var next = current === 'dark' ? 'light' : 'dark';
+    };
+    // aria-pressed tells screen readers whether dark mode is on
+    themeToggle.setAttribute('aria-pressed', currentTheme() === 'dark' ? 'true' : 'false');
+    themeToggle.addEventListener('click', function () {
+      var next = currentTheme() === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
+      themeToggle.setAttribute('aria-pressed', next === 'dark' ? 'true' : 'false');
       try { localStorage.setItem('theme', next); } catch (e) {}
     });
   }
